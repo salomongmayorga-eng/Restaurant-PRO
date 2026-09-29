@@ -1,0 +1,6 @@
+{
+  "name": "Restaurant Pro - Sistema de Gestión de Restaurante",
+  "description": "Restaurant Pro: Sistema de gestión integral para restaurantes. Monitoreo de insumos, comandas de cocina, carta, bodega y cierre de jornada.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
