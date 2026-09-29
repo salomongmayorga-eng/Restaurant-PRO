@@ -64,14 +64,15 @@
 
   // 1. Reset old cache keys for fresh restaurant state
   try {
-    const resetKey = 'restaurant_pro_v2_initialized';
+    const resetKey = 'restaurant_pro_v3_clean_slate';
     if (!localStorage.getItem(resetKey)) {
       Object.keys(localStorage).forEach(key => {
         if (
-          key.startsWith('taqueria_cache_') ||
-          key === 'taqueria_custom_menu_order' ||
-          key === 'taqueriaUser' ||
-          key === 'taqueriaSelectedBranch'
+          key.startsWith('taqueria') ||
+          key.startsWith('rp_cache_') ||
+          key.includes('menu_order') ||
+          key.includes('User') ||
+          key.includes('Branch')
         ) {
           localStorage.removeItem(key);
         }
